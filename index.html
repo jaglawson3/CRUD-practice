@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+      <head>
+        <title>Movie Inventory</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="app.js"></script>
+      </head>
+      <body>
+        <header>
+          <h1>Movie Inventory</h1>
+          <p class="tagline">Movie Inventory Portal!</p>
+        </header>
+        <main>
+          <section>
+            <h2>Movies</h2>
+            <ul class="movie-list"></ul>
+          </section>
+          <section>
+            <h2>Add a Movie</h2>
+            <form class="new-movie-form">
+              <label for="movie-name">Movie Name</label>
+              <input type="text" id="movie-name" name="movie_name">
+              <label for="release-year">Release Year</label>
+              <input type="text" id="release-year" name="year_released">
+              <label for="genre">Genre</label>
+              <input type="text" id="genre" name="genre">
+              <label for="mpaa-rating">MPAA Rating</label>
+              <input type="text" id="mpaa-rating" name="rating_MPAA">
+              <label for="imdb-rating">IMDB Score</label>
+              <input type="text" id="imdb-rating" name="rating_IMDB">
+              <input type="submit" value="Add Movie">
+              <output class="creation-message flash-message">Movie Added!</output>
+            </form>
+          </section>
+        </main>
+        <footer>
+          <small>All these movies are property of you!</small>
+        </footer>
+      </body>
+</html>
